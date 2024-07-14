@@ -1,0 +1,14 @@
+@mixin Dipslay($AI,$JC,$GAP){
+    display: flex;
+    align-items:$AI;
+    justify-content:$JC;
+    gap: $GAP;
+}
+@mixin FontStiyle($FW,$FS,$LH, $Ttr,$CLR,$MB){
+    font-weight: $FW;
+    font-size: $FS;
+    line-height: $LH;
+    text-transform: $Ttr;
+    color: $CLR;
+    margin-bottom: $MB;
+}

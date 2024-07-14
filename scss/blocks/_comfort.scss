@@ -1,0 +1,126 @@
+.comfort-section {
+    padding-bottom: 120px;
+}
+.comfort__content--wrapper {
+    padding: 178px 0 166px 90px;
+    background-image: url(../../images/comfort-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+    position: relative;
+    z-index: -10;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        max-width: 769px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 129px;
+        clip-path: polygon(0 0, 62% 0, 100% 100%, 0% 100%);
+        background-color:$--comfort-bg;
+        z-index: -5;
+    }
+}
+.comfort__content--title {
+    max-width: 362px;
+    display: block;
+    @include FontStiyle($FW:600,$FS:48px,$LH:60px, $Ttr:inherit,$CLR:$--white-clr,$MB:0px);
+}
+.comfort__list {
+    margin: 72.5px 0 0 66px;
+    @include Dipslay($AI:center,$JC:flex-start,$GAP:64px);
+    flex-wrap: wrap;
+}
+.comfort__item {
+    max-width: 447px;
+    width: 100%;
+    @include Dipslay($AI:center,$JC:flex-start,$GAP:40px);
+}
+.comfort__wrapper {
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    background-color: $--blok-bg-clr;
+}
+.comfort__wrapper--img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto auto;
+}
+.comfort__subwrapp{
+    max-width: 291px;
+}
+.comfort__wrapper--title {
+    @include FontStiyle($FW:600,$FS:20px,$LH:27px, $Ttr:inherit,$CLR:$--title-clr,$MB:16px);
+}
+.comfort__wrapper--text {
+    @include FontStiyle($FW:400,$FS:16px,$LH:24px, $Ttr:inherit,$CLR:$--text-clr,$MB:16px);
+}
+@media (max-width:765px){
+    .comfort-section {
+        padding-bottom: 100px;
+    }
+    .comfort__content--wrapper {
+        padding: 112px 0 106px 85px;
+        background-image: url(../../images/comfort-tablet-img.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:left;
+        position: relative;
+        z-index: -10;
+        
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            max-width: 600px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 129px;
+            clip-path: polygon(0 0, 62% 0, 100% 100%, 0% 100%);
+            background-color:$--comfort-bg;
+            z-index: -5;
+        }
+    }
+    .comfort__content--title {
+        max-width:288px;
+    }
+    .comfort__list {
+        margin: 101px 0 0 48px;
+        flex-direction: column;
+        @include Dipslay($AI:center,$JC:flex-start,$GAP:49px);
+        flex-wrap: wrap;
+    }
+    .comfort__item {
+        @include Dipslay($AI:center,$JC:flex-start,$GAP:49.6px);
+    }
+    .comfort__wrapper {
+        max-width: 91px;
+        width: 100%;
+        height: 88px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        background-color: $--blok-bg-clr;
+    }
+    .comfort__subwrapp{
+        max-width: 100%;
+    }
+}
+@media (max-width:560px){
+    .comfort-section {
+        display: none;
+    }
+}
